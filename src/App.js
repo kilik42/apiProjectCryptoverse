@@ -17,15 +17,15 @@ function App() {
             
                 <div className="routes">
                   <Routes>
-                    <Route exact path="/" component={Homepage}/>
+                    <Route exact path="/" component={Homepage} element={<Homepage/>}/>
                       
-                    <Route exact path="/exchanges" component={Exchanges}/>
+                    <Route exact path="/exchanges" component={Exchanges} element={<Exchanges/>}/>
                   
-                    <Route exact path="/cryptocurrencies" component={Cryptocurrencies}/>
+                    <Route exact path="/cryptocurrencies" component={Cryptocurrencies} element={<Cryptocurrencies/>}/>
                     
-                    <Route exact path="/crypto/:coinId" component={CryptoDetails}/>
+                    <Route exact path="/crypto/:coinId" component={CryptoDetails} element={<CryptoDetails/>}/>
                       
-                    <Route exact path="/news" component={News}/>
+                    <Route exact path="/news" component={News} element={<News/>}/>
                       
                   </Routes>
                 </div>
