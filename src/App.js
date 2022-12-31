@@ -8,13 +8,13 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <div className="navbar">
         <Navbar />
       </div>
       <div className="main">
         
-            
+            <Layout>
                 <div className="routes">
                   <Routes>
                     <Route exact path="/" component={Homepage} element={<Homepage/>}/>
@@ -30,8 +30,8 @@ function App() {
                   </Routes>
                 </div>
             
-       
-      </div>
+                </Layout>
+      
       <div className="footer">
         <Typography.Title 
         level={5} 
@@ -48,7 +48,7 @@ function App() {
 
 
       </div>
-
+      </div>
     </div>
   );
 }
