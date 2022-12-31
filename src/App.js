@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import {Layout, Typography, Space} from 'antd';
 import {Navbar, Exchanges, Homepage, Cryptocurrencies, News, CryptoDetails} from './components';
 import 'antd/dist/reset.css';
-
+// import 'antd/dist/antd.min.css';
 import './App.css';
 
 function App() {
@@ -33,7 +33,18 @@ function App() {
        
       </div>
       <div className="footer">
+        <Typography.Title level={5} style={{color: 'white', textAlign: 'center'}}>
+          Cryptoverse <br />
+          All rights reserved
+        </Typography.Title>
 
+        <Space>
+          <Link to="/">Home</Link>
+          <Link to="/exchanges">Exchanges</Link>
+          <Link to="/news">News</Link>
+        </Space>
+
+        
       </div>
 
     </div>
